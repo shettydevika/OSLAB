@@ -18,7 +18,14 @@ int main()
 
     //logi for c-scan disk scheduling
     //logic for sort the request array
-    
+
     for(i=0;i<n;i++){
-        hi
+        for(j=o;j<n-i;j++){
+            if(RQ[j]>RQ[j+1]){
+                int temp;
+                temp=RQ[i];
+                RQ[j]=RQ[j+1];
+                RQ[j+1]=temp;
+            }
+        }
     }
