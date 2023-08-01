@@ -2,7 +2,7 @@
 #include<stdlib.h>
 
 int main(){
-    int RQ[100],i,n,TotalHeadMoment=0,initial;
+    int RQ[100],j,i,n,TotalHeadMoment=0,initial;
     printf("Enter the number of requests\n");
     scanf("%d",&n);
     printf("Enter the requests sequence\n");
@@ -14,10 +14,26 @@ int main(){
     //logic for FCFS disk scheduling
     printf("Sequence of requst access:\n");
     for(i=0;i<n;i++){
-        printf("%d",RQ[i]);
+        printf("%d\t",RQ[i]);
         TotalHeadMoment=TotalHeadMoment+abs(RQ[i]-initial);
         initial=RQ[i];
     }
     printf("\n Total Head Moment is %d",TotalHeadMoment);
     return 0;
 }
+
+/*Enter the number of requests
+7
+Enter the requests sequence
+82
+170
+43
+140
+24
+16
+190
+Enter the initial head position
+50
+Sequence of requst access:
+82170431402416190
+ Total Head Moment is 642*/
