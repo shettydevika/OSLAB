@@ -19,5 +19,5 @@ int main()
     //logi for c-scan disk scheduling
     //logic for sort the request rray
     for(i=0;i<n;i++){
-        
+        hi
     }
