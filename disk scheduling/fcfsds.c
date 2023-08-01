@@ -7,7 +7,7 @@ int main(){
     scanf("%d",&n);
     printf("Enter the requests sequence\n");
     for(i=0;i<n;i++)
-        scanf("%d",&RQ[i]);
+      scanf("%d",&RQ[i]);
     printf("Enter the initial head position\n");
     scanf("%d",&initial);
 
@@ -18,4 +18,6 @@ int main(){
         TotalHeadMoment=TotalHeadMoment+abs(RQ[i]-initial);
         initial=RQ[i];
     }
+    printf("\n Total Head Moment is %d",TotalHeadMoment);
+    return 0;
 }
