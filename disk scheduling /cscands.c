@@ -7,7 +7,7 @@ int main(){
     scanf("%d",&n);
     printf("Enter request Sequence\n");
     for(i=0;i<n;i++)
-    scanf("%d",&RQ[i]);
+    scanf("%d ",&RQ[i]);
     printf("Enter intial head position\n");
     scanf("%d",&initial);
     printf("Enter total disk size\n");
@@ -37,7 +37,7 @@ int main(){
     if (move==1){
         printf("Sequence of request access: \n");
         for(i=index;i<n;i++){
-            printf("%d",RQ[i]);
+            printf("%d ",RQ[i]);
             TotalHeadMoment=TotalHeadMoment+abs(RQ[i]-initial);
             initial=RQ[i];
         }
@@ -45,7 +45,7 @@ int main(){
         TotalHeadMoment=TotalHeadMoment+abs(size-1-0);
         initial=0;
         for(i=0;i<index;i++){
-            printf("%d",RQ[i]);
+            printf("%d ",RQ[i]);
             TotalHeadMoment=TotalHeadMoment+abs(RQ[i]-initial);
             initial=RQ[i];
         }
@@ -54,7 +54,7 @@ int main(){
         printf("Sequence of request access: \n");
         for(i=index-1;i>=0;i--)
         {
-            printf("%d",RQ[i]);
+            printf("%d ",RQ[i]);
             TotalHeadMoment=TotalHeadMoment+abs(RQ[i]-initial);
             initial=RQ[i];
         }
@@ -62,7 +62,7 @@ int main(){
         TotalHeadMoment=TotalHeadMoment+abs(size-1-0);
         initial=size-1;
         for(i=n-1;i>=index;i--){
-            printf("%d",RQ[i]);
+            printf("%d ",RQ[i]);
             TotalHeadMoment=TotalHeadMoment+abs(RQ[i]-initial);
             initial=RQ[i];
         }
@@ -90,5 +90,5 @@ Enter total disk size
 Enter the head movement direction for high 1 and low 0
 1
 Sequence of request access: 
-82140170190162443
+82 140 170 190 16 24 43
 Total head movement is 391*/

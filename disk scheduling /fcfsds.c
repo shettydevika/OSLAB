@@ -7,14 +7,14 @@ int main(){
     scanf("%d",&n);
     printf("Enter the requests sequence\n");
     for(i=0;i<n;i++)
-      scanf("%d",&RQ[i]);
+      scanf("%d ",&RQ[i]);
     printf("Enter the initial head position\n");
     scanf("%d",&initial);
 
     //logic for FCFS disk scheduling
     printf("Sequence of requst access:\n");
     for(i=0;i<n;i++){
-        printf("%d\t",RQ[i]);
+        printf("%d ",RQ[i]);
         TotalHeadMoment=TotalHeadMoment+abs(RQ[i]-initial);
         initial=RQ[i];
     }
@@ -35,5 +35,5 @@ Enter the requests sequence
 Enter the initial head position
 50
 Sequence of requst access:
-82170431402416190
+82 170 43 140 24 16 190
  Total Head Moment is 642*/
