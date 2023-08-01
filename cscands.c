@@ -17,7 +17,8 @@ int main()
     scanf("%d",&move);
 
     //logi for c-scan disk scheduling
-    //logic for sort the request rray
+    //logic for sort the request array
+    
     for(i=0;i<n;i++){
         hi
     }
